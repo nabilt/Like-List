@@ -18,13 +18,12 @@ Unfortunately, Facebook doesn't provide a users likes without authentication, wh
 Screenshots
 -----------
 
-![Screen shot 1](/nabilt/LikeList/raw/master/screenshot)
+![Screen shot 1](/nabilt/Like-List/raw/master/img/screenshot.png)
 
 Installation
 ------------
 
 Signup for a Google App Engine account and install the SDK <http://code.google.com/appengine/>.
-
 
 Getting Started
 ---------------
