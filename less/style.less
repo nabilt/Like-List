@@ -1,0 +1,162 @@
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrap.less";
+@import "bootstrap-override.less";
+
+
+body {
+    background-color: @offWhite; 
+}
+
+.brand {
+    font-size: 3em !important;
+    margin-top: 0px !important;
+    padding-top: 5px !important ;
+    padding-bottom: 4px !important ;
+    font-family: 'Kristi', cursive;
+}
+
+.event-box {
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+#alert-messages {
+    text-align: center;    
+}
+
+.help-block {
+    height: 15px;
+    opacity: 0;
+}
+
+#main-progress-bar {
+    display: none;
+
+    top: 320px;
+}
+#share-controls {
+    display: none;
+}
+
+#controls-row {
+    position: relative; 
+    top: 200px;
+}
+#search-boxes input, #search-boxes  {
+
+}
+
+
+#main-separator {
+    height: 0;
+    width: 90%;
+    border-bottom: 2px solid darken(#fff, 3%);
+    .center-block();
+    .box-shadow(0 7px 10px  rgba(0,0,0,.25));
+    .border-radius(10);
+    display: none;
+}
+
+#tiles {
+    list-style-type: none;
+    position: relative; /** Needed to ensure items are laid out relative to this container **/
+    margin: 20px 0px 0px 0px;
+}
+
+#tiles li {	
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    display: none; /** Hide items initially to avoid a flicker effect **/
+    padding: 4px;
+    .box-shadow(0 3px 5px rgba(0,0,0,.25));
+}
+
+#tiles li img {
+    display: block;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+    color: #666;
+    font-size: 12px;
+    margin: 7px 0 0 7px;
+}
+
+/**
+ * Some extra styles to randomize heights of grid items.
+ */
+#tiles ali:nth-child(3n) {
+    height: 175px;
+}
+
+#tiles ali:nth-child(4n-3) {
+    padding-bottom: 30px;
+}
+
+#tiles ali:nth-child(5n) {
+    height: 250px;
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+
+.circle-play-icon:hover {
+    opacity:0.9;    
+}
+
+.embed-content {
+    cursor: default;
+}
+.embed-content > .modal-body {
+    color: transparent;
+}
+
+.video-thumbnail > .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: @zindexModal;
+  max-height: 500px;
+  overflow: auto;
+  width: 800px;
+  margin: -250px 0 0 -400px;
+  background-color: @white;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.3);
+  *border: 1px solid #999; /* IE6-7 */
+  .border-radius(6px);
+  .box-shadow(0 3px 7px rgba(0,0,0,0.3));
+  .background-clip(padding-box);
+  
+  &.fade.in { top: 50%; }
+}
+
+.social-button {
+    padding-top: 15px;
+}
+
+.circle-play-icon {
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:0.7;
+    background:url(../img/circle-play.png) center center no-repeat;
+/*
+  width:100%;
+  height:100%;
+  
+  position: absolute;
+  background-image: url("../img/36-circle-play@2x.png");
+  #z-index:1;
+  */
+}
+
+

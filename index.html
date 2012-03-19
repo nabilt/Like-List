@@ -1,0 +1,61 @@
+<%inherit file="base.html"/>
+
+<%block name="end_scripts">
+<script src="js/jquery.wookmark-ck.js"></script>
+<script src="js/jquery.waitforimages.js"></script>
+<script src="js/script-ck.js"></script>
+</%block>
+
+<div class="container-fluid">
+
+ <div id="controls-row" class="row-fluid">
+    <div class="span2">&nbsp</div>
+    <div class="span8 center">    
+      <div id="search-boxes">    
+	<div class="control-group form-inline">
+	  <div class="controls">
+	    <input type="text" id="twitter-search" class="input-medium" placeholder="Twitter" value="${twitter_handle_default}">
+	    <input type="text" id="youtube-search" class="input-medium" placeholder="YouTube" value="${youtube_handle_default}">
+	    <input type="text" id="vimeo-search" class="input-medium" placeholder="Vimeo" value="${vimeo_handle_default}">
+	    <button class="btn btn-primary" onclick="search()">Search</button>      
+	    <span class="help-block"></span>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="span2">    
+      <div id="share-controls" class="control-group form-inline pull-right">
+	<!--<label class="control-label">Share</label> -->
+	<div class="controls">
+	  <input type="text" id="page-name" class="input-small" placeholder="Page Name" value="nabil">
+	  <button onclick="create_page()" class="btn">Create</button>
+	  <span class="help-block"></span>
+	</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="main-separator">
+</div>
+
+
+<ul id="tiles">  
+</ul>
+
+<div class="container">
+  <div class="row">
+    <div id="alert-messages" class="span8 offset2"></div>      
+  </div>
+
+ <div class="row">
+   <div id="main-progress-bar" class="center-block span6 offset3 progress progress-info progress-striped active">
+     <div class="bar" style="width: 100%;"></div>
+   </div>   
+ </div>
+</div>
+
+

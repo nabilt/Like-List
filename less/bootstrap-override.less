@@ -1,0 +1,58 @@
+@import "bootstrap.less";
+
+// Main nav bar without top-fix should not have radius
+.navbar-non-fix-top { 
+    .border-radius(0);
+    height: @navbarHeight;
+}
+
+.btn {
+  .border-radius(3px);
+  @shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  .box-shadow(@shadow);
+}
+
+
+// Brand, links, text, and buttons
+.navbar {
+  .brand {
+      margin-top:5px;
+  }
+}
+@btnPrimaryColor:            @orange; 
+@btnWarningColor:            @yellow; 
+@btnDangerColor:             lighten(@red, 10%); 
+@btnSuccessColor:            lighten(@mediumGreen, 10%); 
+@btnInfoColor:               #5bc0de; 
+@btnInverseColor:            @black; 
+
+.progress-info.progress-striped .bar {
+    #gradient > .striped(@btnInfoColor);
+}
+
+// custom buttons colors
+// -------------------------
+.btn-primary {
+  .buttonBackground(@btnPrimaryColor, @btnPrimaryColor);
+}
+// Warning appears are orange
+.btn-warning {
+  .buttonBackground(@btnWarningColor, @btnWarningColor);
+}
+// Danger and error appear as red
+.btn-danger {
+  .buttonBackground(#ee5f5b, #bd362f);
+}
+// Success appears as green
+.btn-success {
+  .buttonBackground(@btnSuccessColor, @btnSuccessColor);
+}
+// Info appears as a neutral blue
+.btn-info {
+  //.buttonBackground(#5bc0de, #2f96b4);
+  .buttonBackground(@btnInfoColor, @btnInfoColor);
+}
+// Inverse appears as dark gray
+.btn-inverse {
+  .buttonBackground(#454545, #262626);
+}

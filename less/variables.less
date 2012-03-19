@@ -1,0 +1,116 @@
+// Variables.less
+// Variables to customize the look and feel of Bootstrap
+// -----------------------------------------------------
+
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Custom colors
+@darkGreen:             #192e1a;
+@mediumGreen:           #478500;
+@lightGreen:            #a1d102;
+@offWhite:              #f2f2f2;
+@newOrange:             #ff7601;
+@lightOrange:           lighten(@newOrange, 5%);
+@darkOrange:            darken(@newOrange, 5%); 
+
+// Links
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
+
+// Grays
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+// Accent colors
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 @mediumGreen;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                @newOrange;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+// Typography
+@baseFontSize:          13px;
+@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight:        18px;
+@textColor:             darken(@orange,10%);
+
+// Buttons
+@primaryButtonBackground:    @linkColor;
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindexDropdown:          1000;
+@zindexPopover:           1010;
+@zindexTooltip:           1020;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;
+
+// Sprite icons path
+@iconSpritePath:          "../img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+
+// Input placeholder text color
+@placeholderText:         @grayLight;
+
+// Hr border color
+@hrBorder:                 @grayLighter;
+
+// Navbar
+@navbarHeight:                    50px;
+@navbarBackground:                @darkOrange;
+@navbarBackgroundHighlight:       @newOrange;
+@navbarLinkBackgroundHover:       transparent;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+
+// Form states and alerts
+@warningText:             #966c1d;
+@warningBackground:       #f2e85c;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #a53c37;
+@errorBackground:         #ff8d87;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             @darkGreen;
+@successBackground:       @lightGreen;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                darken(#0095b2, 10%);
+@infoBackground:          #01d5ff;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+
+
+// GRID
+// --------------------------------------------------
+
+// Default 940px grid
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Fluid grid
+@fluidGridColumnWidth:    6.382978723%;
+@fluidGridGutterWidth:    2.127659574%;

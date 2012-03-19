@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/MediaObject" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Likes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add the following three tags inside head -->
+    <meta itemprop="name" content="My Likes">
+    <meta itemprop="description" content="Your likes, favorites and
+					  shares from accross the
+					  web on one page">
+    <meta name="author" content="Your Name here">
+    <!-- Useful for G+ and other services to get a thumbnail to embed
+    in other websites  -->
+    <meta itemprop="image" content="http://127.0.0.1/img/screenshot.png">
+
+    <!-- Le styles -->
+   <style type="text/css">
+      body {
+        /*padding-top: 60px;*/
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+   <link href="css/style.css" rel="stylesheet">
+   <link href='http://fonts.googleapis.com/css?family=Kristi' rel='stylesheet' type='text/css'>
+   
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+   <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'YOUR_GOOGLE_ANALYTICS_API_HERE']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>    
+
+    <div id="wrapper" >
+      <div class="navbar">
+	<div class="navbar-inner navbar-non-fix-top">
+	  <a class="brand" href="http://127.0.0.1">My Likes</a>
+          <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse">
+              <ul class="nav">
+
+              </ul>
+	      
+		  <ul class="nav pull-right" data-target=".nav-collapse">
+		    <li class="social-button"><g:plusone size="medium" href="http://127.0.0.1"></g:plusone></li>
+		    <li class="social-button">
+                      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://127.0.0.1" data-text="My likes, plus ones and favorites on one page">Tweet</a>
+		    </li>
+		    <li class="social-button">
+		      <div class="fb-like" data-href="http://127.0.0.1" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+		    </li>
+		  </ul>
+
+            </div><!--/.nav-collapse -->
+          </div>
+	</div>
+     </div>
+
+      <div id="tile-container" >
+	${self.body()}
+
+      </div><!--/#tile-container-->
+
+    </div>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+    <script src="js/bootstrap-transition-ck.js"></script>
+    <script src="js/bootstrap-alert-ck.js"></script>
+    <script src="js/bootstrap-modal-ck.js"></script>
+    <!--<script src="js/bootstrap-dropdown.js"></script>-->
+    <!--<script src="js/bootstrap-scrollspy.js"></script>-->
+    <!--<script src="js/bootstrap-tab.js"></script>-->
+    <!--<script src="js/bootstrap-tooltip.js"></script>-->
+    <!--<script src="js/bootstrap-popover.js"></script>-->
+    <script src="js/bootstrap-button-ck.js"></script>
+    <!--<script src="js/bootstrap-collapse.js"></script>-->
+    <!--<script src="js/bootstrap-carousel.js"></script>-->
+    <!--<script src="js/bootstrap-typeahead.js"></script>-->
+    <%block name="end_scripts"/>
+
+    <!-- G+  -->
+    <script type="text/javascript">
+    (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    </script>
+    
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  </body>
+</html>
