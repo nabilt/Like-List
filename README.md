@@ -3,7 +3,6 @@ LikeList
 
 * Author:    Nabil Tewolde (<nabil.tewolde@gmail.com>)
 * Version:   0.1
-* Website:   <http://www.likelist.ca>
 * GitHub:    <https://github.com/nabilt/LikeList>
 
 Like List create a personal page with your likes and favorites from across the web. You can think of it like about.me except with your 'likes' from various social networks embedded on a Pinterest style page.
